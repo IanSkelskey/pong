@@ -75,7 +75,7 @@ function love.draw()
 
     -- clear the screen with a specific color; in this case, a color similar
     -- to some versions of the original Pong
-    love.graphics.clear(40, 45, 52, 255)
+    love.graphics.clear(40/255, 45/255, 52/255, 1) --new version of LOVE2D uses RGB values from 0 to 1 not 0 to 255.
 
     -- draw welcome text toward the top of the screen
     love.graphics.printf('Hello Pong!', 0, 20, VIRTUAL_WIDTH, 'center')
